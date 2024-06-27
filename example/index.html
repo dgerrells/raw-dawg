@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Test application</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Raw Dawg</h1>
+      <textarea placeholder="...json" id="jsonInput" rows="8"></textarea>
+      <button id="convertBtn">To Raw</button>
+
+      <!-- <input type="file" id="fileInput" rows="8"></textarea>
+      <button id="convertFile">Devert</button> -->
+    </div>
+
+    <script type="module" src="./index.js"></script>
+
+    <style>
+      body,
+      html {
+        background: #181818;
+        color: #fafafa;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      #fileInput {
+        margin-top: 2rem;
+      }
+      button {
+        transition: all linear 100ms;
+        margin-top: 0.5rem;
+        outline: none;
+        border: none;
+        height: 1.5rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        background: slategray;
+        color: #eee;
+        cursor: pointer;
+      }
+      button:hover {
+        transform: scale3d(1.02, 1.1, 1);
+      }
+      button:active {
+        transform: scale3d(0.98, 0.95, 1);
+      }
+      h1 {
+        text-align: center;
+        font-family: monospace;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+      textarea {
+        padding: 0.5rem;
+        background: #121212;
+        color: white;
+        border-radius: 8px;
+      }
+    </style>
+  </body>
+</html>
