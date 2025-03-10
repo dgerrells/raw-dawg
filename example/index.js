@@ -61,17 +61,12 @@ document.getElementById("convertBtn").addEventListener("click", () => {
 });
 
 function measurePerformance(fn, numSamples = 100) {
-  const start = performance.now(); // Get the current time in milliseconds
-
+  const start = performance.now();
   for (let i = 0; i < numSamples; i++) {
-    fn(); // Execute the input function
+    fn();
   }
-
-  const end = performance.now(); // Get the current time after running the function
-
-  // Calculate the average execution time in milliseconds
+  const end = performance.now();
   const averageTime = (end - start) / numSamples;
-
   return averageTime;
 }
 

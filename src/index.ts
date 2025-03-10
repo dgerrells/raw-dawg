@@ -184,16 +184,3 @@ export function fromRaw(bytes: Uint8Array) {
 
   return readRaw();
 }
-
-/*
-
-[ 1, [1,2], 2, 3]
-
-array
-
-
-[{ [], 4 }]
-
-[{ [], 3}]
-
-*/
